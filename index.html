@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5_Elements & Form</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>Welcome To TrashGo</h1>
+        <p>Your waste management solution</p>
+    </header>
+    
+     <!--order lists with roman numerals-->
+     <section>
+        <h2>Our Features</h2>
+        <ol type="I">
+            <li>Waste Pickup</li>
+            <li>Recycling Reporting</li>
+            <li>Route Optimization</li>
+            <li>Gamified Rewards</li>
+            <li>Point Program</li>
+
+        </ol>
+
+     </section>
+
+         <!--pexels image -->
+
+     <section>
+        <h2>Enivromental Impact</h2>
+        <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+        alt="TrashGo Impact" width="500">
+
+     </section>
+
+      <!--  table of contacts -->
+    <section>
+        <h2>Our Top Contacts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aisha Mensah</td>
+                    <td>Freetown, Sierra Leone</td>
+                    <td>+232 76 123 456</td>
+                    <td>aisha@trashgo.org</td>
+                </tr>
+                <tr>
+                    <td>Carlos Rivera</td>
+                    <td>Bo, Sierra Leone</td>
+                    <td>+232 77 987 654</td>
+                    <td>carlos@trashgo.org</td>
+                </tr>
+                <tr>
+                    <td>Fatima Khan</td>
+                    <td>Kenema, Sierra Leone</td>
+                    <td>+232 75 543 210</td>
+                    <td>fatima@trashgo.org</td>
+                </tr>
+                <tr>
+                    <td>Jonas Lee</td>
+                    <td>Makeni, Sierra Leone</td>
+                    <td>+232 78 111 222</td>
+                    <td>jonas@trashgo.org</td>
+                </tr>
+                <tr>
+                    <td>Mariama Conteh</td>
+                    <td>Port Loko, Sierra Leone</td>
+                    <td>+232 79 999 888</td>
+                    <td>mariama@trashgo.org</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+     <!-- registration form -->
+     <section>
+        <h2>Register With TrashGo</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required>
+
+            <label for="dob">Date of Birth*</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="role">Role*</label>
+            <select id="role" name="role" required>
+                <option value="">--Select your role--</option>
+                <option value="resident">Resident</option>
+                <option value="collector">Waste Collector</option>
+                <option value="official">City Official</option>
+            </select>
+
+            <label>Preferred Contact Method*</label>
+            <input type="radio" id="contact-email" name="contact_method" value="email" required>
+            <label for="contact-email" style="display: inline;">Email</label>
+            <input type="radio" id="contact-phone" name="contact_method" value="phone">
+            <label for="contact-phone" style="display: inline;">Phone</label>
+
+            <label>What services are you interested in?</label>
+            <input type="checkbox" id="pickup" name="services" value="pickup">
+            <label for="pickup" style="display: inline;">Scheduled Pickup</label><br>
+            <input type="checkbox" id="recycling" name="services" value="recycling">
+            <label for="recycling" style="display: inline;">Recycling</label><br>
+            <input type="checkbox" id="alerts" name="services" value="alerts">
+            <label for="alerts" style="display: inline;">Neighborhood Alerts</label>
+
+            <br><br>
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 TrashGo | Contact: info@trashgo.org</p>
+    </footer>
+  
+</body>
+</html>
